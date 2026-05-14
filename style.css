@@ -237,6 +237,11 @@ header h1 {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-img-wrap img:hover {
+  transform: scale(1.05);
 }
 
 .category-label {
@@ -413,10 +418,16 @@ footer {
   text-decoration: none;
 }
 
-.footer-col ul li a:hover {
-  color: #000;
+h1.page-title {
+  text-align: center;
+  padding: 24px 16px 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Inria Serif', serif;
+  opacity: 0.5;
 }
-
 
 .page-title {
   text-align: center;
@@ -471,7 +482,6 @@ footer {
   margin-top: 3px;
 }
 
-
 .feature-image {
   width: 100%;
   line-height: 0;
@@ -518,6 +528,41 @@ footer {
 .product-description ul li::before {
   content: "• ";
   color: #000;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  width: 300px;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 10;
+}
+
+div.gallery-item:hover {
+  border: 1px solid rgb(255, 242, 159);
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+}
+
+div.gallery-item div.price {
+  padding-left: 15px;
+  padding-top: 0px;
+  color: rgb(203, 147, 15);
 }
 
 @media (min-width: 768px) {
