@@ -3,67 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jo Mercer</title>
+  <title>Jo Mercer - AI Fashion Assistant</title>
   <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<!-- header -->
-  <header>
-    <button id="menuBtn">
-      <svg width="22" height="16" viewBox="0 0 22 16" fill="none">
-        <line y1="1" x2="22" y2="1" stroke="black" stroke-width="2"/>
-        <line y1="8" x2="22" y2="8" stroke="black" stroke-width="2"/>
-        <line y1="15" x2="22" y2="15" stroke="black" stroke-width="2"/>
-      </svg>
-    </button>
-    <h1>
-      <img src="images/au-flag.png" alt="" class="flag-icon" onerror="this.style.display='none'">
-      JO MERCER
-      <img src="images/au-flag.png" alt="" class="flag-icon" onerror="this.style.display='none'">
-    </h1>
-    <a href="cart.html" class="cart-link">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="3" y="7" width="18" height="14" rx="1"/>
-        <path d="M8 7V5a4 4 0 0 1 8 0v2"/>
-      </svg>
-    </a>
-  </header>
-
-    <!-- menu-->
-    <nav id="fullMenu" class="full-menu">
-        <div class="menu-inner">
-          <div class="menu-search">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-            </svg>
-            <input type="text" placeholder="" class="search-input">
-          </div>
-          <div class="menu-categories">
-            <a href="boots.html" class="menu-cat-item">
-              <div class="menu-cat-img"><img src="images/cat-boots.jpeg" alt="Boots"></div>
-              <span class="menu-cat-label">BOOTS</span>
-            </a>
-            <a href="heels.html" class="menu-cat-item">
-              <div class="menu-cat-img"><img src="images/cat-heels.jpeg" alt="Heels"></div>
-              <span class="menu-cat-label">HEELS</span>
-            </a>
-            <a href="bags.html" class="menu-cat-item">
-              <div class="menu-cat-img"><img src="images/cat-bags.jpeg" alt="Bags"></div>
-              <span class="menu-cat-label">BAGS</span>
-            </a>
-          </div>
-          <button id="closeBtn" class="menu-back">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
-            </svg>
-          </button>
+<body class="ai-page">
+ 
+  <p class="ai-page-label">AI</p>
+ 
+  <div class="ai-card">
+    <div class="ai-card-header">
+      <a href="index.html" class="ai-return">Return</a>
+      <h2 class="ai-title">AI FASHION ASSISTANT</h2>
+    </div>
+ 
+    <div class="ai-chat-area">
+      <div class="ai-messages" id="chatMessages">
+        <div class="ai-msg bot">
+          <div class="ai-avatar bot-avatar"></div>
+          <div class="ai-msg-text">Hey! Let me help you build your outfit!</div>
         </div>
-      </nav>
-
-      
-
-      <script src="script.js"></script>
-    </body>
-    </html>
+        <div class="ai-msg bot">
+          <div class="ai-avatar bot-avatar"></div>
+          <div class="ai-msg-text">I can assist you in shopping/aesthetic needs!</div>
+        </div>
+      </div>
+ 
+      <div class="ai-input-area">
+        <div class="ai-input-box">
+          <input type="text" id="chatInput" placeholder="What would you like to know?">
+          <div class="ai-input-bottom">
+            <div class="ai-input-icons">
+              <button class="ai-icon-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/>
+                </svg>
+              </button>
+              <button class="ai-icon-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </button>
+              <button class="ai-icon-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/>
+                </svg>
+              </button>
+            </div>
+            <button id="chatSendBtn" class="ai-send-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+ 
