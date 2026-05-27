@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jo Mercer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <button id="menuBtn">
+      <svg width="22" height="16" viewBox="0 0 22 16" fill="none">
+        <line y1="1" x2="22" y2="1" stroke="black" stroke-width="2"/>
+        <line y1="8" x2="22" y2="8" stroke="black" stroke-width="2"/>
+        <line y1="15" x2="22" y2="15" stroke="black" stroke-width="2"/>
+      </svg>
+    </button>
+    <h1>
+      <a href="index.html">
+        <img src="images/au-flag.png" alt="" class="flag-icon" onerror="this.style.display='none'">
+        JO MERCER
+        <img src="images/au-flag.png" alt="" class="flag-icon" onerror="this.style.display='none'">
+      </a>
+    </h1>
+    <a href="cart.html" class="cart-link">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="7" width="18" height="14" rx="1"/>
+        <path d="M8 7V5a4 4 0 0 1 8 0v2"/>
+      </svg>
+    </a>
+  </header>
+
+  <nav id="fullMenu" class="full-menu">
+    <div class="menu-inner">
+      <div class="menu-search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" placeholder="" class="search-input">
+      </div>
+      <div class="menu-categories">
+        <a href="boots.html" class="menu-cat-item">
+          <div class="menu-cat-img"><img src="images/cat-boots.jpeg" alt="Boots"></div>
+          <span class="menu-cat-label">BOOTS</span>
+        </a>
+        <a href="heels.html" class="menu-cat-item">
+          <div class="menu-cat-img"><img src="images/cat-heels.jpeg" alt="Heels"></div>
+          <span class="menu-cat-label">HEELS</span>
+        </a>
+        <a href="bags.html" class="menu-cat-item">
+          <div class="menu-cat-img"><img src="images/cat-bags.jpeg" alt="Bags"></div>
+          <span class="menu-cat-label">BAGS</span>
+        </a>
+      </div>
+      <button id="closeBtn" class="menu-back">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section class="pdp">
+    <div class="pdp-images">
+      <div class="pdp-img-grid">
+        <div class="pdp-img-cell"><img id="mainImg" src="" alt=""></div>
+        <div class="pdp-img-cell"><img id="img2" src="" alt=""></div>
+        <div class="pdp-img-cell"><img id="img3" src="" alt=""></div>
+        <div class="pdp-img-cell"><img id="img4" src="" alt=""></div>
+      </div>
+    </div>
+
+    <div class="pdp-info">
+      <h2 class="pdp-name" id="pdpName"></h2>
+      <p class="pdp-price" id="pdpPrice"></p>
+
+      <div class="pdp-colors">
+        <span class="color-dot" style="background: #8a6510;"></span>
+        <span class="color-dot" style="background: #c0392b;"></span>
+      </div>
+
+      <div class="pdp-sizes">
+        <button class="size-btn">32</button>
+        <button class="size-btn">33</button>
+        <button class="size-btn selected">34</button>
+        <button class="size-btn">35</button>
+        <button class="size-btn">36</button>
+      </div>
+
+      <button class="pdp-add-cart">ADD TO CART</button>
+
+      <div class="pdp-accordions">
+        <div class="pdp-accordion">
+          <button class="accordion-toggle">DESCRIPTION <span class="accordion-arrow">+</span></button>
+          <div class="accordion-content">
+            <p>Premium leather upper with a comfortable block heel. Designed for everyday wear with a refined finish.</p>
+          </div>
+        </div>
+        <div class="pdp-accordion">
+          <button class="accordion-toggle">CARE TIPS <span class="accordion-arrow">+</span></button>
+          <div class="accordion-content">
+            <p>Wipe clean with a damp cloth. Store in a cool, dry place away from direct sunlight. Use leather conditioner regularly.</p>
+          </div>
+        </div>
+        <div class="pdp-accordion">
+          <button class="accordion-toggle">RETURN POLICY <span class="accordion-arrow">+</span></button>
+          <div class="accordion-content">
+            <p>Free returns within 30 days of purchase. Items must be unworn and in original packaging.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="pdp-review-btn">LEAVE A REVIEW</button>
+
+      <a href="index.html" class="pdp-shop-link">&rarr; SHOP JO MERCER &larr;</a>
+    </div>
+  </section>
+
+  <a href="aitool.html" class="ai-badge">AI</a>
+
+  <section class="services">
+    <div class="service-item">
+      <svg class="service-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="1" y="6" width="15" height="13" rx="1"/><path d="M16 10h4l3 4v5h-3"/>
+        <circle cx="5.5" cy="19.5" r="2.5"/><circle cx="18.5" cy="19.5" r="2.5"/>
+      </svg>
+      <p class="service-label">Free Shipping</p>
+    </div>
+    <div class="service-item">
+      <svg class="service-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      <p class="service-label">Click &amp; Collect<br>within 2 hours*</p>
+    </div>
+    <div class="service-item">
+      <svg class="service-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="1 4 1 10 7 10"/>
+        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+      </svg>
+      <p class="service-label">Easy Returns &amp;<br>Changes</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
+          </svg>
+        </div>
+        <div class="footer-socials">
+          <a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="#333"></svg></a>
+          <a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#333" stroke="none"/></svg></a>
+          <a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="#333"></svg></a>
+          <a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="#333"></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Use cases</h4>
+        <ul>
+          <li><a href="#">UI design</a></li>
+          <li><a href="#">UX design</a></li>
+          <li><a href="#">Wireframing</a></li>
+          <li><a href="#">Diagramming</a></li>
+          <li><a href="#">Brainstorming</a></li>
+          <li><a href="#">Online whiteboard</a></li>
+          <li><a href="#">Team collaboration</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Prototyping</a></li>
+          <li><a href="#">Development features</a></li>
+          <li><a href="#">Design systems</a></li>
+          <li><a href="#">Collaboration features</a></li>
+          <li><a href="#">Design process</a></li>
+          <li><a href="#">FigJam</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Best practices</a></li>
+          <li><a href="#">Colors</a></li>
+          <li><a href="#">Color wheel</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Resource library</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
