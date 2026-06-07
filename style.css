@@ -1249,3 +1249,31 @@ a.product-card {
   object-fit: cover;
   display: block;
 }
+
+.payment-body {
+  padding: 20px;
+}
+
+.payment-form {
+  max-width: 400px;
+}
+
+.payment-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.payment-form input, .payment-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+.payment-form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: blue;
+  color: white;
+  border: none;
+}
