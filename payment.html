@@ -9,44 +9,45 @@
 </head>
 <body class="payment-body">
 
-  <div class="payment-label">Payment</div>
-  <div class="payment-image">
-    <img src="images/payment-model.jpg" alt="">
-  </div>
-
-  <div class="payment-form">
-    <a href="cart.html" class="payment-return">Return to Shopping</a>
-    <h2>Billing Details</h2>
+    <div class="payment-label">Payment</div>
   
-    <label>First & Last Name</label>
-    <input type="text" placeholder="i.e. Filler name">
+    <section class="payment-card">
+      <div class="payment-image">
+        <img src="images/payment-model.jpg" alt="">
+      </div>
   
-    <label>Email Address</label>
-    <input type="email" placeholder="i.e. name@email.com">
+      <div class="payment-form">
+        <a href="cart.html" class="payment-return">Return to Shopping</a>
+        <h2 class="payment-heading">Billing Details</h2>
   
-    <label>Country</label>
-    <select>
-      <option>USA</option>
-      <option>Australia</option>
-      <option>United Kingdom</option>
-    </select>
+        <label>First & Last Name</label>
+        <input type="text" placeholder="i.e. John Doe">
   
-    <label>Credit Cards</label>
-    <input type="text">
+        <label>Email Address</label>
+        <input type="email" placeholder="i.e. john@email.com">
   
-    <label>Expire Date</label>
-    <input type="text" placeholder="Month/Year">
+        <label>Country</label>
+        <select>
+          <option>United States of America</option>
+          <option>Australia</option>
+          <option>United Kingdom</option>
+        </select>
   
-    <label>Security Code</label>
-    <input type="text" placeholder="PIN">
+        <label>Credit Cards</label>
+        <input type="text">
   
-    <p>By clicking this button you agree to the end-user agreement.</p>
+        <label>Expire Date</label>
+        <input type="text" placeholder="Month/Year">
   
-    <button>Confirm Payment</button>
-  </div>
-
-
-
-  <script src="script.js"></script>
+        <label>Security Code</label>
+        <input type="text" placeholder="PIN">
+  
+        <p class="payment-agreement">By clicking this button you agree to the end-user agreement.</p>
+  
+        <button class="payment-confirm-btn">Confirm Payment</button>
+      </div>
+    </section>
+  
+    <script src="script.js"></script>
 </body>
 </html>
