@@ -591,9 +591,6 @@ div.gallery-item div.price {
   color: rgb(203, 147, 15);
 }
 
-
-Copy
-
 .ai-page {
   background: #2a2a2a;
   min-height: 100vh;
@@ -698,7 +695,7 @@ Copy
   background: rgba(255, 255, 255, 0.4);
 }
  
-.ai-msg.bot .ai-msg-text {
+.ai-msg.bot, .ai-msg-text {
   background: rgba(200, 185, 155, 0.25);
   border-color: rgba(200, 185, 155, 0.4);
 }
@@ -929,6 +926,7 @@ a.product-card {
   border-radius: 6px;
   overflow: hidden;
   aspect-ratio: 3 / 4;
+  transition: transform 0.3s ease-in-out;
 }
 
 .pdp-img-cell img {
@@ -936,6 +934,8 @@ a.product-card {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease-in-out;
+  
 }
 
 .pdp-name {
