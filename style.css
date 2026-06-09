@@ -23,6 +23,24 @@ header {
   z-index: 1;
 }
 
+.confirm-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.bow-icon {
+  height: 22px;
+  width: auto;
+}
+
+.bow-icon.flipped {
+  transform: scaleX(-1);
+}
+
 header h1 {
   font-family: 'Inria Serif', serif;
   font-size: 22px;
