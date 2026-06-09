@@ -439,49 +439,6 @@ h1.page-title {
   font-family: 'Inria Serif', serif;
 }
 
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px 10px;
-  padding: 0 14px 20px;
-}
-
-.product-card {
-  text-align: center;
-}
-
-.product-img-wrap {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  overflow: hidden;
-  background: #f5f0ea;
-}
-
-.product-img-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.product-name {
-  font-family: 'Inria Serif', serif;
-  font-size: 7px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin-top: 6px;
-  line-height: 1.4;
-  color: #000;
-}
-
-.product-price {
-  font-family: 'Inria Serif', serif;
-  font-size: 8px;
-  color: #555;
-  margin-top: 3px;
-}
-
 .feature-image {
   width: 100%;
   line-height: 0;
@@ -508,11 +465,6 @@ h1.page-title {
 
 .product-description strong {
   color: #000;
-}
-
-.product-description .desc-subhead {
-  margin-top: 16px;
-  margin-bottom: 8px;
 }
 
 .product-description ul {
@@ -581,14 +533,15 @@ a.gallery-item img {
   display: block;
 }
 
-div.gallery-item div.desc {
-  padding: 15px;
+.gallery-item .desc {
+  padding: 5px;
+  font-weight: 700;
 }
 
-div.gallery-item div.price {
+.gallery-item .price {
   padding-left: 15px;
   padding-top: 0px;
-  color: rgb(203, 147, 15);
+  color: #8a6510;
 }
 
 .ai-page {
@@ -782,10 +735,6 @@ div.gallery-item div.price {
     padding: 0 15% 48px;
   }
 
-  .product-name {
-    font-size: 9px;
-  }
-
   .category-card {
     max-width: none;
     flex: 1;
@@ -926,7 +875,6 @@ a.product-card {
   border-radius: 6px;
   overflow: hidden;
   aspect-ratio: 3 / 4;
-  transition: transform 0.3s ease-in-out;
 }
 
 .pdp-img-cell img {
@@ -934,9 +882,13 @@ a.product-card {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease-in-out;
   
 }
+ 
+.pdp-img-cell:nth-child(1) img { transform: scale(1); }
+.pdp-img-cell:nth-child(2) img { transform: scale(1.2); transform-origin: bottom center;}
+.pdp-img-cell:nth-child(3) img { transform: scale(1.4); transform-origin: bottom left;}
+.pdp-img-cell:nth-child(4) img { transform: scale(1.6); transform-origin: bottom right;}
 
 .pdp-name {
   font-family: 'Inria Serif', serif;
@@ -1053,7 +1005,7 @@ a.product-card {
   font-size: 11px;
   letter-spacing: 3px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .pdp-shop-link {
@@ -1115,55 +1067,10 @@ a.product-card {
   flex-shrink: 0;
 }
 
-.cart-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.cart-product-info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.cart-product-name {
-  font-family: 'Inria Serif', serif;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.cart-product-size {
-  font-family: 'Inria Serif', serif;
-  font-size: 11px;
-  color: #888;
-}
-
 .cart-amount {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-.cart-qty-btn {
-  width: 28px;
-  height: 28px;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  background: #fff;
-  font-size: 14px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cart-qty {
-  font-family: 'Inria Serif', serif;
-  font-size: 14px;
-  min-width: 20px;
-  text-align: center;
 }
 
 .cart-price {
@@ -1173,20 +1080,19 @@ a.product-card {
   font-style: italic;
 }
 
+.cart-item-img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .cart-remove {
   background: none;
   border: none;
   font-size: 16px;
   color: #999;
   cursor: pointer;
-}
-
-.cart-empty {
-  font-family: 'Inria Serif', serif;
-  font-size: 14px;
-  color: #888;
-  text-align: center;
-  padding: 60px 0;
 }
 
 .cart-total-row {
@@ -1346,4 +1252,53 @@ a.product-card {
   display: block;
   font-size: 15px;
   color: #000;
+}
+.review-body {
+  text-align: center;
+  padding: 200px 20px 60px;
+}
+
+.review-form {
+  max-width: 700px;
+  margin: 60px auto 0;
+  text-align: left;
+}
+
+.review-label {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.review-textarea {
+  width: 100%;
+  height: 220px;
+  margin-top: 8px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font: inherit;
+  resize: none;
+}
+.review-stars {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  font-size: 24px;
+  color: #2196f3;
+}
+.review-stars span {
+  margin: 0 6px;
+  cursor: pointer;
+}
+.review-submit {
+  display: block;
+  margin: 40px auto 0;
+  padding: 8px 18px;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
 }

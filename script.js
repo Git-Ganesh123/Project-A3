@@ -78,17 +78,19 @@ if (cartItems) {
   var cart = JSON.parse(localStorage.getItem("cart") || "[]");
   var total = 0;
 
-  if (cart.length === 0) {
-    cartItems.innerHTML = '<p class="cart-empty">Your cart is empty.</p>';
-  }
-
   cart.forEach(function(item, index) {
     var price = parseFloat(item.price.replace(/[^0-9.]/g, "")) || 0;
     total += price;
-
     var row = document.createElement("div");
     row.className = "cart-row";
-    row.innerHTML = '<div class="cart-product"><div class="cart-img"><img src="' + item.image + '" alt=""></div><div class="cart-product-info"><span class="cart-product-name">' + item.name + '</span><span class="cart-product-size">Size ' + item.size + '</span></div></div><div class="cart-amount"><span class="cart-qty">1</span></div><div class="cart-price">' + item.price + '</div><button class="cart-remove" data-index="' + index + '">&#10005;</button>';
+    row.innerHTML =
+      '<div class="cart-product">' +
+        '<img src="' + item.image + '" class="cart-item-img" alt="">' +
+        '<span>' + item.name + (item.size ? " &ndash; Size " + item.size : "") + '</span>' +
+      '</div>' +
+      '<div class="cart-amount">1</div>' +
+      '<div class="cart-price">' + item.price + '</div>' +
+      '<button class="cart-remove" data-index="' + index + '">&#10005;</button>';
     cartItems.appendChild(row);
   });
 
