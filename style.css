@@ -74,9 +74,11 @@ header h1 {
 
 .menu-inner {
   background: #fff;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 500px;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  max-width: 650px;
+  max-height: 400px;
   padding: 40px 28px 36px;
   display: flex;
   flex-direction: column;
@@ -121,9 +123,11 @@ header h1 {
 }
 
 .menu-cat-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  width: 150px;
+  height: 190px;
+  border-radius: 40%;
   overflow: hidden;
 }
 
@@ -145,7 +149,7 @@ header h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000;
-  text-shadow: 0 1px 4px rgba(255,255,255,0.7);
+  text-shadow: 0 0 8px rgba(255,255,255,1), 0 0 16px rgba(255,255,255,1), 0 0 24px rgba(255,255,255,1), 0 0 32px rgba(255,255,255,0.8);;
 }
 
 .menu-back {
@@ -782,10 +786,9 @@ a.gallery-item img {
   }
 
   .menu-cat-img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 200px;
   }
-
   .menu-cat-label {
     font-size: 16px;
   }
