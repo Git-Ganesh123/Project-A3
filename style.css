@@ -995,8 +995,10 @@ a.product-card {
 }
 
 .pdp-review-btn {
+  display: block;
   width: 100%;
   padding: 14px;
+  text-align: center;
   background: #3d3020;
   color: #fff;
   border: none;
@@ -1215,7 +1217,9 @@ a.product-card {
 }
 
 .payment-confirm-btn {
+  display: block;
   width: 100%;
+  text-align: center;
   padding: 14px;
   background: #4338ca;
   color: #fff;
@@ -1224,6 +1228,7 @@ a.product-card {
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .confirm-body {
