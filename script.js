@@ -69,7 +69,20 @@ if (addToCartBtn) {
     var cart = JSON.parse(localStorage.getItem("cart") || "[]");
     cart.push({ name: name, price: price, image: image, size: size });
     localStorage.setItem("cart", JSON.stringify(cart));
-    alert(name + " added to cart!");
+    
+    
+    var popup = document.createElement("div");
+    popup.className = "cart-popup";
+    
+    popup.textContent = name + " added to cart!";
+    document.body.appendChild(popup);
+
+    setTimeout(function() { popup.classList.add("show"); }, 10);
+    setTimeout(function() {
+      popup.classList.remove("show");
+      setTimeout(function() { popup.remove(); }, 300);
+    }, 2500);
+
   });
 }
 
