@@ -1374,4 +1374,13 @@ a.product-card {
     padding: 14px 24px;
     font-size: 13px;
   }
+
+  .menu-categories {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .menu-cat-img {
+    width: 100px;
+    height: 130px;
+  }
 }

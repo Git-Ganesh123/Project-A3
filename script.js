@@ -73,7 +73,7 @@ if (addToCartBtn) {
     
     var popup = document.createElement("div");
     popup.className = "cart-popup";
-    
+
     popup.textContent = name + " added to cart!";
     document.body.appendChild(popup);
 
